@@ -1,0 +1,64 @@
+header {
+    margin: 0;
+    background: rgb(137, 75, 191);
+    color: rgb(255, 237, 10);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    background: rgb(221, 187, 245);
+    color: rgb(152, 132, 218);
+}
+
+footer {
+    margin: 0;
+    background: rgb(175, 160, 224);
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+}
+body .col-3 {
+    background: rgb(253, 247, 232);
+}
+div.row {
+    margin: 0;
+    padding: 10px;
+}
+div.col {
+    margin: 10px;
+    padding: 0;
+}
+div.card {
+    margin: 10px;
+    border: solid rgb(255, 237, 10);
+}
+body footer ul {
+    margin: 0%;
+    padding: 15px;
+    list-style: none;
+}
+
+body footer ul li {
+    padding: 0px 10px;
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar .nav {
+        float: none;
+        margin-bottom: 20px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar .nav {
+        float: none;
+        margin-bottom: 20px;
+    }
+}
