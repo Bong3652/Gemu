@@ -7,31 +7,24 @@ function Ball() {
     this.update = function() {
         this.x += this.xSpeed;
         if (this.xSpeed > 0) {
-            while (this.xSpeed > 0) {
-                this.xSpeed -= .2;
-            }
-        } else {
-            while (this.xSpeed < 0) {
-                this.xSpeed += .2;
-            }
+            this.xSpeed -= .1;
+        } else if (this.xSpeed < 0) {
+            this.xSpeed += .1;
         }
         this.y += this.ySpeed;
         if (this.ySpeed > 0) {
-            while (this.ySpeed > 0) {
-                this.ySpeed -= .2;
-            }
-        } else {
-            while (this.ySpeed < 0) {
-                this.ySpeed += .2;
-            }
+            this.ySpeed -= .1;
+        } else if (this.ySpeed < 0) {
+            this.ySpeed += .1;
         }
         //constrain(this.x, 0, width)
-        if (this.x == width) {
+
+        if (this.x > width) {
             this.x = 0;
         } else if (this.x < 0) {
             this.x = 500;
         }
-        if (this.y == height) {
+        if (this.y > height) {
             this.y = 0;
         } else if (this.y < 0) {
             this.y = 500;
@@ -39,8 +32,8 @@ function Ball() {
         this.pos = createVector(this.x, this.y);
         var dis = p5.Vector.dist(snake.pos, this.pos);
         if (dis < 10) {
-            ball.xSpeed = snake.xSpeed * 1.2;
-            ball.ySpeed = snake.ySpeed * 1.2;
+            ball.xSpeed = snake.xSpeed * 2;
+            ball.ySpeed = snake.ySpeed * 2;
         }
     }
 
