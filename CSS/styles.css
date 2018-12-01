@@ -37,6 +37,7 @@ div.card {
     margin: 10px;
     border: solid rgb(255, 237, 10);
 }
+
 body footer ul {
     margin: 0%;
     padding: 15px;
@@ -45,6 +46,14 @@ body footer ul {
 
 body footer ul li {
     padding: 0px 10px;
+}
+
+canvas {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
 }
 
 /* Small devices (landscape phones, 576px and up)*/

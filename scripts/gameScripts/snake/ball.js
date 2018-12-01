@@ -5,6 +5,11 @@ function Ball() {
     this.xSpeed = 0; 
     this.ySpeed = 0;
     this.update = function() {
+        var goalDis = p5.Vector.dist(food, this.pos);
+        if (goalDis < 10) {
+            food.x = random(0, 500);
+            food.y = random(0, 500);
+        }
         this.x += this.xSpeed;
         if (this.xSpeed > 0) {
             this.xSpeed -= .1;
