@@ -5,10 +5,10 @@ var food;
 
 function setup() {
     createCanvas(500, 500);
-    //socket = io.connect("http://localhost:3000")
     snake = new Snake();
     ball = new Ball();
     food = createVector(random(width), random(height))
+    socket = io.connect("http://localhost:3000/snake/")
 }
 
 function draw() {
